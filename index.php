@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-            echo "This Webpage is running logically"; 
+            echo "This Webpage is running logically"; // a practice echo
         ?>
     </body>
 </html>
