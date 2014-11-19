@@ -1,8 +1,6 @@
 <?php
+require_once ("../model/database.php"); // so our program doesn't use the same information twice 
 
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+$connection = new mysqli($host, $username, $password); // the code we are making sure isn't used twice
 
