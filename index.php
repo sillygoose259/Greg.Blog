@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-            echo "This Webpage is running logically"; // a practice echo
+            require_once (__DIR__ . "controller/create-db.php"); // importing the information from creat-db 
         ?>
     </body>
 </html>
