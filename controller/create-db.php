@@ -18,7 +18,7 @@ if($query) {
     echo "Succesfully created the database: " . $database; // a message that runs if our database creation is successful
 }
 else {
-    echo "Database already exists" // this else statement tells us that the database already exists
+    echo "Database already exists"; // this else statement tells us that the database already exists
 }
     
 
