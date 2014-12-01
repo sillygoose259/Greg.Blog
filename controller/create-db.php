@@ -7,9 +7,20 @@ $connection = new mysqli($host, $username, $password); //we are establishing the
 if($connection-> connect_error) { //testing if we are connecting 
     die("Error : " . $connection->connect_error); // the program will die if it doesn't connect
 }
-else {
-    echo "Success" . $connection->host_info; // the program will continue and give you a message saying success
+
+$exists = $connection ->select_db($database); //selecting our database if it exists or not
+
+if(!$exists) { // an if statement that tell us if our database exists
+    $query = $connection->query("CREATE DATABASE $database"); //created our database  
 }
+
+if($query) {
+    echo "Succesfully created the database: " . $database; // a message that runs if our database creation is successful
+}
+else {
+    echo "Database already exists" // this else statement tells us that the database already exists
+}
+    
 
 $connection->close(); 
 
