@@ -1,8 +1,6 @@
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
+    $title = filer_input(INPUT_POST, "title", FILLER_SANITIZE_STRING);
+    $post = filler_input(INPUT_POST, "post", FILLER_SANITIZE_STRING);
+    
+    echo "<p>TITLE:$title</p>";
+    echo "<p>POST:$post</p>";
